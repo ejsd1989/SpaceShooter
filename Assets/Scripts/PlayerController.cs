@@ -21,9 +21,13 @@ public class PlayerController : MonoBehaviour
 	private float nextFire;
 	[Space(10)]
 	private GameController gameController;
+    private bool fireGun;
+    private bool fireBomb;
 
 	void Start()
 	{
+        fireGun = fireBomb = false;
+
 		GameObject gameControllerObject = GameObject.FindWithTag("GameController");
 		if (gameControllerObject != null)
 		{
@@ -39,20 +43,33 @@ public class PlayerController : MonoBehaviour
 
 	void Update()
 	{
-		if(Input.GetButton("Fire1") && Time.time > nextFire && gameController.ammoCount > 0)
-		{
-			nextFire = Time.time + fireRate;
-			Instantiate(shot, shotSpawn.position, shotSpawnRotation); //as GameObject;
-			audio.Play ();
-			gameController.incrementAmmoCount(-1);
-		}
-		if(Input.GetButton("Fire2") && gameController.GetBombCount() > 0)
-		{
-			gameController.IncrementBombCount(-1);
-			DestroyAll();
-			// Fire bomb
-			// Destroy all enemy & obstacle gameobjects
-		}
+        if (Input.touchCount > 0)
+        {
+            Touch touch = Input.GetTouch(0);
+            if (touch.position.y > Screen.height / 2 && Time.time > nextFire)
+            {
+                fireGun = true;
+            }
+        }
+        else if (Input.GetButton("Fire1") && Time.time > nextFire) fireGun = true;
+        if (Input.GetButton("Fire2") && Time.time > nextFire) fireBomb = true;
+
+        if (fireGun && Time.time > nextFire && gameController.ammoCount > 0)
+        {
+            fireGun = false;
+            nextFire = Time.time + fireRate;
+            Instantiate(shot, shotSpawn.position, shotSpawnRotation); //as GameObject;
+            audio.Play();
+            gameController.incrementAmmoCount(-1);
+        }
+        if (fireBomb && gameController.GetBombCount() > 0)
+        {
+            fireBomb = false;
+            gameController.IncrementBombCount(-1);
+            DestroyAll();
+            // Fire bomb
+            // Destroy all enemy & obstacle gameobjects
+        }
 	}
 
 	void DestroyAll()
@@ -69,9 +86,22 @@ public class PlayerController : MonoBehaviour
 	}
 
 	void FixedUpdate()
-	{
+    {
 		float moveHorizontal = Input.GetAxis("Horizontal");
 		float moveVertical = Input.GetAxis("Vertical");
+
+        if (Input.touchCount > 0)
+        {
+            Touch touch = Input.GetTouch(0);
+            if (touch.position.x < Screen.width / 2 && touch.position.y < Screen.height / 2)
+            {
+                moveHorizontal = -1;
+            }
+            else if (touch.position.x > Screen.width / 2 && touch.position.y < Screen.height / 2)
+            {
+                moveHorizontal = 1;
+            }
+        }
 
 		Vector3 movement = new Vector3(moveHorizontal, 0.0f, moveVertical);
 		rigidbody.velocity = movement * speed;
