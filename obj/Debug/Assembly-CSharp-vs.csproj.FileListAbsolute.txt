@@ -10,3 +10,15 @@ C:\Users\Eissa\Documents\Personal Documents\Unity\SpaceShooter\Temp\bin\Debug\IC
 C:\Users\Eissa\Documents\Personal Documents\Unity\SpaceShooter\obj\Debug\Assembly-CSharp-vs.csprojResolveAssemblyReference.cache
 C:\Users\Eissa\Documents\Personal Documents\Unity\SpaceShooter\obj\Debug\Assembly-CSharp.dll
 C:\Users\Eissa\Documents\Personal Documents\Unity\SpaceShooter\obj\Debug\Assembly-CSharp.pdb
+C:\Users\Eissa\Documents\Unity-Projects\SpaceShooter\Temp\bin\Debug\Assembly-CSharp.dll
+C:\Users\Eissa\Documents\Unity-Projects\SpaceShooter\Temp\bin\Debug\Assembly-CSharp.pdb
+C:\Users\Eissa\Documents\Unity-Projects\SpaceShooter\Temp\bin\Debug\UnityEditor.dll
+C:\Users\Eissa\Documents\Unity-Projects\SpaceShooter\Temp\bin\Debug\UnityEngine.dll
+C:\Users\Eissa\Documents\Unity-Projects\SpaceShooter\Temp\bin\Debug\UnityEngine.UI.dll
+C:\Users\Eissa\Documents\Unity-Projects\SpaceShooter\Temp\bin\Debug\Mono.Cecil.dll
+C:\Users\Eissa\Documents\Unity-Projects\SpaceShooter\Temp\bin\Debug\nunit.framework.dll
+C:\Users\Eissa\Documents\Unity-Projects\SpaceShooter\Temp\bin\Debug\Unity.DataContract.dll
+C:\Users\Eissa\Documents\Unity-Projects\SpaceShooter\Temp\bin\Debug\ICSharpCode.NRefactory.dll
+C:\Users\Eissa\Documents\Unity-Projects\SpaceShooter\obj\Debug\Assembly-CSharp-vs.csprojResolveAssemblyReference.cache
+C:\Users\Eissa\Documents\Unity-Projects\SpaceShooter\obj\Debug\Assembly-CSharp.dll
+C:\Users\Eissa\Documents\Unity-Projects\SpaceShooter\obj\Debug\Assembly-CSharp.pdb

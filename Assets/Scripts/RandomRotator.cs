@@ -8,6 +8,6 @@ public class RandomRotator : MonoBehaviour {
 	void Start()
 	{
 		// Static Vector3 insideUnitSphere; - Returns a random point inside a sphere with radius 1; 
-		rigidbody.angularVelocity = Random.insideUnitSphere * tumble;
+		GetComponent<Rigidbody>().angularVelocity = Random.insideUnitSphere * tumble;
 	}
 }

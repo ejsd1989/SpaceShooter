@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2015
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "space-havoc.CSharp.Plugins", "space-havoc.CSharp.Plugins.csproj", "{AD2BE2FB-3C2D-C8EA-8F41-689795E2B65D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "space-havoc.CSharp", "space-havoc.CSharp.csproj", "{ECA339B6-E5D1-0765-5678-B3694CF1CA05}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "space-havoc.CSharp.Editor", "space-havoc.CSharp.Editor.csproj", "{726DEF28-51BD-2E0E-31D6-76FD7C196717}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AD2BE2FB-3C2D-C8EA-8F41-689795E2B65D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD2BE2FB-3C2D-C8EA-8F41-689795E2B65D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD2BE2FB-3C2D-C8EA-8F41-689795E2B65D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD2BE2FB-3C2D-C8EA-8F41-689795E2B65D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ECA339B6-E5D1-0765-5678-B3694CF1CA05}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECA339B6-E5D1-0765-5678-B3694CF1CA05}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECA339B6-E5D1-0765-5678-B3694CF1CA05}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECA339B6-E5D1-0765-5678-B3694CF1CA05}.Release|Any CPU.Build.0 = Release|Any CPU
+		{726DEF28-51BD-2E0E-31D6-76FD7C196717}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{726DEF28-51BD-2E0E-31D6-76FD7C196717}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{726DEF28-51BD-2E0E-31D6-76FD7C196717}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{726DEF28-51BD-2E0E-31D6-76FD7C196717}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

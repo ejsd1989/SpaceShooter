@@ -7,7 +7,7 @@ using UnityEngine;
 using System.Collections;
 
 public class DestroyByBoundary : MonoBehaviour {
-	void OnTriggerExit (Collider other)
+	void OnTriggerEnter (Collider other)
 	{
 		if(other.gameObject.layer != 8)
 		{

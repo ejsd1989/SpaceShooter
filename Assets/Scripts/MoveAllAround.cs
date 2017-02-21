@@ -15,7 +15,14 @@ public class MoveAllAround : MonoBehaviour {
 	{
 		if(speedMin != 0 && speedMax != 0)
 			speed = Random.Range(speedMin, speedMax);
-		rigidbody.velocity = (transform.forward + transform.right) * speed; // transform.forward relates to the Z axis
+        Vector3 direction;
+        if (Random.Range(0, 1) == 1)
+        {
+            direction = transform.right;
+        }
+        else
+            direction = new Vector3 (-1, 0, 0);
+        GetComponent<Rigidbody>().velocity = (transform.forward + direction) * speed; // transform.forward relates to the Z axis
 //		rigidbody.velocity = transform.right * speed;
 	}
 
@@ -33,11 +40,11 @@ public class MoveAllAround : MonoBehaviour {
         goPos = gameObject.transform.position;
         if (goPos.x <= minX || goPos.x >= maxX)
         {
-            rigidbody.velocity = new Vector3(-rigidbody.velocity.x, 0.0f, rigidbody.velocity.z);
+            GetComponent<Rigidbody>().velocity = new Vector3(-GetComponent<Rigidbody>().velocity.x, 0.0f, GetComponent<Rigidbody>().velocity.z);
         } 
         if (goPos.z <= minZ || goPos.z >= maxZ)
         {
-            rigidbody.velocity = new Vector3(rigidbody.velocity.x, 0.0f, -rigidbody.velocity.z);
+            GetComponent<Rigidbody>().velocity = new Vector3(GetComponent<Rigidbody>().velocity.x, 0.0f, -GetComponent<Rigidbody>().velocity.z);
         }
     }
 

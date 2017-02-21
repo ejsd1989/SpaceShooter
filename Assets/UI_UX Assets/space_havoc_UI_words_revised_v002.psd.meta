@@ -1,0 +1,243 @@
+fileFormatVersion: 2
+guid: d85829730638a544a9f18e2225173355
+timeCreated: 1459648763
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: font_buble_sci_fi_resume
+    21300002: font_buble_sci_fi_play
+    21300004: font_buble_sci_fi_options
+    21300006: font_buble_sci_fi_back
+    21300008: font_buble_sci_fi_abort
+    21300010: font_buble_sci_fi_leader
+    21300012: font_buble_sci_fi_board
+    21300014: font_buble_sci_fi_pause
+    21300016: font_buble_sci_fi_guest
+    21300018: font_buble_sci_fi_score
+    21300020: font_buble_sci_fi_time
+    21300022: font_buble_sci_fi_audio
+    21300024: font_buble_sci_fi_top
+    21300026: font_buble_sci_fi_gameOver
+    21300028: font_buble_sci_fi_quit
+    21300030: font_buble_sci_fi_login
+    21300032: font_buble_sci_fi_menu
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: font_buble_sci_fi_resume
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 2758
+        width: 1446
+        height: 359
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: font_buble_sci_fi_play
+      rect:
+        serializedVersion: 2
+        x: 1545
+        y: 2757
+        width: 854
+        height: 351
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: font_buble_sci_fi_options
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 2383
+        width: 1457
+        height: 343
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: font_buble_sci_fi_back
+      rect:
+        serializedVersion: 2
+        x: 1539
+        y: 2394
+        width: 842
+        height: 331
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: font_buble_sci_fi_abort
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 2024
+        width: 1116
+        height: 357
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: font_buble_sci_fi_leader
+      rect:
+        serializedVersion: 2
+        x: 1162
+        y: 2025
+        width: 1237
+        height: 347
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: font_buble_sci_fi_board
+      rect:
+        serializedVersion: 2
+        x: 1213
+        y: 1676
+        width: 1146
+        height: 334
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: font_buble_sci_fi_pause
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 1669
+        width: 1122
+        height: 348
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: font_buble_sci_fi_guest
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 1375
+        width: 966
+        height: 280
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: font_buble_sci_fi_score
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 1004
+        width: 1184
+        height: 358
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: font_buble_sci_fi_time
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 640
+        width: 902
+        height: 358
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: font_buble_sci_fi_audio
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 289
+        width: 1072
+        height: 337
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: font_buble_sci_fi_top
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 0
+        width: 701
+        height: 292
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: font_buble_sci_fi_gameOver
+      rect:
+        serializedVersion: 2
+        x: 1337
+        y: 1060
+        width: 1062
+        height: 611
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: font_buble_sci_fi_quit
+      rect:
+        serializedVersion: 2
+        x: 1465
+        y: 681
+        width: 898
+        height: 375
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: font_buble_sci_fi_login
+      rect:
+        serializedVersion: 2
+        x: 1285
+        y: 343
+        width: 1096
+        height: 331
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: font_buble_sci_fi_menu
+      rect:
+        serializedVersion: 2
+        x: 959
+        y: 0
+        width: 1035
+        height: 336
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

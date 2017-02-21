@@ -1,0 +1,232 @@
+fileFormatVersion: 2
+guid: 16cf684413542c94da1203e1b052b1cc
+timeCreated: 1459647046
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: blueTextured_gear
+    21300002: blueTextured_plate_1
+    21300004: blueTextured_plate_2
+    21300006: blueTextured_play_plate_1
+    21300008: blueTextured_play_plate_2
+    21300010: blueTextured_score_3
+    21300012: blueTextured_score_1
+    21300014: blueTextured_score_2
+    21300016: blueTextured_bomb_1
+    21300018: blueTextured_bomb_2
+    21300020: blueTextured_score_leftSide
+    21300022: blueTextured_score_rightSide
+    21300024: blueTextured_menu_1
+    21300026: blueTextured_menu_2
+    21300028: blueTextured_optionsPanel_1
+    21300030: blueTextured_optionsPanel_2
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: blueTextured_gear
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 1182
+        width: 174
+        height: 172
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: blueTextured_plate_1
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 1269
+        width: 331
+        height: 105
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: blueTextured_plate_2
+      rect:
+        serializedVersion: 2
+        x: 691
+        y: 1152
+        width: 334
+        height: 115
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: blueTextured_play_plate_1
+      rect:
+        serializedVersion: 2
+        x: 642
+        y: 1011
+        width: 328
+        height: 117
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: blueTextured_play_plate_2
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 978
+        width: 399
+        height: 173
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: blueTextured_score_3
+      rect:
+        serializedVersion: 2
+        x: 613
+        y: 568
+        width: 382
+        height: 140
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: blueTextured_score_1
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 487
+        width: 526
+        height: 205
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: blueTextured_score_2
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 287
+        width: 576
+        height: 196
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: blueTextured_bomb_1
+      rect:
+        serializedVersion: 2
+        x: 942
+        y: 211
+        width: 171
+        height: 240
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: blueTextured_bomb_2
+      rect:
+        serializedVersion: 2
+        x: 808
+        y: 214
+        width: 101
+        height: 184
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: blueTextured_score_leftSide
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 397
+        width: 46
+        height: 139
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: blueTextured_score_rightSide
+      rect:
+        serializedVersion: 2
+        x: 748
+        y: 395
+        width: 50
+        height: 143
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: blueTextured_menu_1
+      rect:
+        serializedVersion: 2
+        x: 1084
+        y: 639
+        width: 402
+        height: 565
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: blueTextured_menu_2
+      rect:
+        serializedVersion: 2
+        x: 1677
+        y: 778
+        width: 457
+        height: 337
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: blueTextured_optionsPanel_1
+      rect:
+        serializedVersion: 2
+        x: 1277
+        y: 11
+        width: 498
+        height: 553
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: blueTextured_optionsPanel_2
+      rect:
+        serializedVersion: 2
+        x: 1853
+        y: 22
+        width: 508
+        height: 571
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

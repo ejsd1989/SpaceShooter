@@ -1,11 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
-
-[System.Serializable]
-public class Boundary
-{
-	public float Xmin, Xmax, Zmin, Zmax;
-}
+using UnityStandardAssets.CrossPlatformInput;
 
 public class PlayerController : MonoBehaviour 
 {
@@ -17,15 +12,18 @@ public class PlayerController : MonoBehaviour
 	public Transform shotSpawn;
 	private Quaternion shotSpawnRotation;
 	public float fireRate = 0.5f;
+    public bool startGame = false;
 	[Space(10)]
 	private float nextFire;
 	[Space(10)]
 	private GameController gameController;
     private bool fireGun;
     private bool fireBomb;
+    private bool autoFire = false;
 
 	void Start()
 	{
+        CheckEnableAutoFire();
         fireGun = fireBomb = false;
 
 		GameObject gameControllerObject = GameObject.FindWithTag("GameController");
@@ -43,10 +41,12 @@ public class PlayerController : MonoBehaviour
 
 	void Update()
 	{
+        // fire weapons on multiple touches
         if (Input.touchCount > 0)
         {
             Touch touch = Input.GetTouch(0);
-            if (touch.position.y > Screen.height / 2 && Time.time > nextFire)
+
+            if (touch.position.y > Screen.height / 2 || touch.position.x > Screen.width/2 && Time.time > nextFire)
             {
                 fireGun = true;
             }
@@ -54,23 +54,65 @@ public class PlayerController : MonoBehaviour
         else if (Input.GetButton("Fire1") && Time.time > nextFire) fireGun = true;
         if (Input.GetButton("Fire2") && Time.time > nextFire) fireBomb = true;
 
-        if (fireGun && Time.time > nextFire && gameController.ammoCount > 0)
+        //if (fireGun && Time.time > nextFire && gameController.ammoCount > 0)
+        //{
+        //    fireGun = false;
+        //    nextFire = Time.time + fireRate;
+        //    FireBolt();
+        //}
+        if (Time.time > nextFire && fireGun)// && gameController.ammoCount > 0)
         {
             fireGun = false;
             nextFire = Time.time + fireRate;
-            Instantiate(shot, shotSpawn.position, shotSpawnRotation); //as GameObject;
-            audio.Play();
-            gameController.incrementAmmoCount(-1);
+            FireBolt();
         }
-        if (fireBomb && gameController.GetBombCount() > 0)
+        if (Time.time > nextFire && fireBomb)// && gameController.ammoCount > 0)
         {
-            fireBomb = false;
+            fireGun = false;
+            nextFire = Time.time + fireRate;
+            FireBolt();
+        }
+        //if (startGame && Time.time > nextFire)// && gameController.ammoCount > 0)
+        //{
+        //    fireGun = false;
+        //    nextFire = Time.time + fireRate;
+        //    FireBolt();
+        //}
+        //if (startGame && fireBomb)
+        //{
+        //    FireBomb();
+        //}
+    }
+
+    void CheckEnableAutoFire()
+    {
+#if MOBILE_INPUT
+        autoFire = true;
+#else
+        autoFire = false;
+#endif
+
+    }
+
+    void FireBolt()
+    {
+        Instantiate(shot, shotSpawn.position, shotSpawnRotation); //as GameObject;
+        GetComponent<AudioSource>().Play();
+        gameController.incrementAmmoCount(-1);
+    }
+
+    public void FireBomb()
+    {
+        //new stuff
+        int bombs = gameController.GetBombCount();
+
+        if (bombs > 0)
+        {
             gameController.IncrementBombCount(-1);
             DestroyAll();
-            // Fire bomb
-            // Destroy all enemy & obstacle gameobjects
         }
-	}
+        fireBomb = false;
+    }
 
 	void DestroyAll()
 	{
@@ -84,38 +126,4 @@ public class PlayerController : MonoBehaviour
 			}
 		}
 	}
-
-	void FixedUpdate()
-    {
-		float moveHorizontal = Input.GetAxis("Horizontal");
-		float moveVertical = Input.GetAxis("Vertical");
-
-        if (Input.touchCount > 0)
-        {
-            Touch touch = Input.GetTouch(0);
-            if (touch.position.x < Screen.width / 2 && touch.position.y < Screen.height / 2)
-            {
-                moveHorizontal = -1;
-            }
-            else if (touch.position.x > Screen.width / 2 && touch.position.y < Screen.height / 2)
-            {
-                moveHorizontal = 1;
-            }
-        }
-
-		Vector3 movement = new Vector3(moveHorizontal, 0.0f, moveVertical);
-		rigidbody.velocity = movement * speed;
-
-		rigidbody.position = new Vector3
-		(
-			Mathf.Clamp(rigidbody.position.x, boundary.Xmin, boundary.Xmax),
-         	0.0f,
-			Mathf.Clamp(rigidbody.position.z, boundary.Zmin, boundary.Zmax)
-		);
-	
-		// for tilting in all 4 directions
-		// rigidbody.rotation = Quaternion.Euler(rigidbody.velocity.z * tilt, 0.0f, rigidbody.velocity.x * -tilt);
-		rigidbody.rotation = Quaternion.Euler(0.0f, 0.0f, rigidbody.velocity.x * -tilt);
-	}
-
 }
